@@ -1,0 +1,122 @@
+.home {
+  min-width: 1100px;
+  background-color :#940303;
+}
+
+.home-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:200px;
+  background: url('top_bg.png') no-repeat center top;
+  z-index: 99;
+}
+
+.home-menu {
+  position: relative;
+  left: 50%;
+  top: 150px;
+  height: 40px;
+  width: 1000px;
+  margin-left: -500px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.home-menu a {
+  float: left;
+  width: 135px;
+  height: 40px;
+  line-height: 40px;
+  color :white;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-menu-active {
+  background-color: #950303 !important;
+}
+
+.home-icon {
+  position: fixed;
+  left: 50%;
+  top: 10px;
+  margin-left: -63px;
+}
+
+.home-carousel {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-carousel-indicators {
+  position :fixed;
+  left: 50%;
+  bottom: 65px;
+}
+
+.home-carousel-img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-entry {
+  position: fixed;
+  left: 50%;
+  bottom: 110px;
+  width: 1000px;
+  height: 120px;
+  margin-left: -500px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+.home-entry-box {
+  float: left;
+  width: 180px;
+  height: 90px;
+  margin: 16px 0px 16px 16px;
+  border: 4px solid #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.home-entry-box:hover {
+  border: 4px solid #940303;
+}
+
+.home-entry-box a {
+  width :100%;
+  height :100%;
+  line-height: 90px;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.home-entry-box a i {
+  color: #a0a0a0;
+}
+
+.home-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #940303;
+}
+
+.home-bottom p {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: white;
+}

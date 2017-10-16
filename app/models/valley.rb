@@ -1,0 +1,2 @@
+class Valley < ApplicationRecord
+end

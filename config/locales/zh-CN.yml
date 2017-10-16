@@ -1,0 +1,7 @@
+zh-CN:
+  layouts:
+    application:
+      site_title: "吉林国安药业"
+  home:
+    index:
+      title: "首页"

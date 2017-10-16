@@ -1,0 +1,2 @@
+class Introduce < ApplicationRecord
+end

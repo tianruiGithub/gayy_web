@@ -1,0 +1,7 @@
+= link_to "首页", root_path, :class => action_name == "index" ? "home-menu-active" : ""
+= link_to "走进国安", home_introduce_path, :class => action_name == "introduce" ? "home-menu-active" : "" 
+= link_to "品牌文化", home_brand_path, :class => action_name == "brand" ? "home-menu-active" : ""
+= link_to "新闻中心", home_news_list_path, :class => action_name == "news" ? "home-menu-active" : ""
+= link_to "产品及服务", home_product_list_path, :class => action_name == "product" ? "home-menu-active" : ""
+= link_to "客户往来", home_client_list_path, :class => action_name == "client" ? "home-menu-active" : ""
+= link_to "联系我们", home_contact_path, :class => action_name == "contact" ? "home-menu-active" : ""
