@@ -1,15 +1,15 @@
-#carousel-image.carousel.home-carousel.slide{"data-ride" => "carousel"}
+#carousel-image.carousel.home-carousel.slide{"data-rade" => "carousel"}
   %ol.carousel-indicators.home-carousel-indicators
     %li.active{"data-target" => "#carousel-image", "data-slide-to" => "0"}
     %li{"data-target" => "#carousel-image", "data-slide-to" => "1"}
     %li{"data-target" => "#carousel-image", "data-slide-to" => "2"}
   .carousel-inner{:role => "listbox"}
     .item.active
-      %img.carousel-img.home-carousel-img{:src => "assets/index_gd_1.jpg", :alt => ""}
+      = image_tag "index_gd_1.jpg", :class => "carousel-img home-carousel-img"
       .carousel-caption
     .item
-      %img.carousel-img.home-carousel-img{:src => "assets/index_gd_2.jpg", :alt => ""}
+      = image_tag "index_gd_2.jpg", :class => "carousel-img home-carousel-img"
       .carousel-caption
     .item
-      %img.carousel-img.home-carousel-img{:src => "assets/index_gd_3.jpg", :alt => ""}
+      = image_tag "index_gd_3.jpg", :class => "carousel-img home-carousel-img"
       .carousel-caption

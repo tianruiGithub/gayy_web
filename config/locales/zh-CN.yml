@@ -5,3 +5,36 @@ zh-CN:
   home:
     index:
       title: "首页"
+  introduce:
+    index:
+      title: "走进国安"
+  brand:
+    index:
+      title: "品牌文化"
+  news:
+    index:
+      title: "新闻中心"
+  products:
+    index:
+      title: "产品及服务"
+  clients:
+    index:
+      title: "客户往来"
+  contact:
+    index:
+      title: "联系我们"
+  organization:
+    index:
+      title: "国安药业"
+  valley:
+    index:
+      title: "药王谷"
+  medicine:
+    index:
+      title: "安国药行"
+  address:
+    index:
+      title: "中药材基地"
+  tour:
+    index:
+      title: "中医养生游"

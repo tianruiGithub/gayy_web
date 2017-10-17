@@ -1,11 +1,8 @@
-//$(".home-carousel, .home-carousel-img").width(window.innerWidth);
-//$(".home-carousel, .home-carousel-img").height(window.innerHeight);
-$(".home.index").ready(function() {
-  $(".home-carousel, .home-carousel-img").width(window.innerWidth);
-  $(".home-carousel, .home-carousel-img").height(window.innerHeight);
-});
-
-$(window).resize(function() {
-  $(".home-carousel, .home-carousel-img").width(window.innerWidth);
-  $(".home-carousel, .home-carousel-img").height(window.innerHeight);
+$(".home").ready(function() {
+  $(".home-carousel-img").width(window.innerWidth);
+  $(".home-carousel-img").height(window.innerHeight);
+  setInterval(function() {
+  $(".home-carousel-img").width(window.innerWidth);
+  $(".home-carousel-img").height(window.innerHeight);
+  }, 10);
 });

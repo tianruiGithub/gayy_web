@@ -71,3 +71,7 @@ gem 'datagrid'
 source 'https://rails-assets.org/' do
   gem 'rails-assets-adminlte'
 end
+
+gem 'rails_kindeditor'
+
+gem 'annotate'
