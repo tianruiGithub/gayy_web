@@ -1,0 +1,24 @@
+%header.main-header
+  %a.logo{:href => "#"}
+    %span.logo-mini 国安
+    %span.logo-lg 国安药业管理后台
+
+  %nav.navbar.navbar-static-top
+    %a.sidebar-toggle{:href => "#", "data-toggle" => "push-menu", :role => "button"}
+      %span.sr-only s
+    .navbar-menu
+      %div{:style => "float:right; color:white; height:50px; line-height:50px; margin-right:20px;"}
+        管理员
+        %span{:style => "margin-left:20px;"}
+          = link_to "注销", destroy_admin_session_path, "data-method" => "delete", :style => "color: #d0d0d0;"
+    -#
+      %ul.nav.navbar-nav
+        %li.dropdown.user.user-menu
+          %a.dropdown-toggle{"data-toggle" => "dropdown"}
+            %img.img-circle{:src => "", :alt => ""}
+            %p ddddd
+
+        %li.user-body
+          .row
+            .col-xs-4.text-center
+              %a{:href => ""} 退出

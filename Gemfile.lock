@@ -249,6 +249,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   datagrid
   devise
+  execjs
   font-awesome-sass
   haml-rails
   jbuilder (~> 2.5)

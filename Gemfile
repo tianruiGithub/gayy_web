@@ -59,6 +59,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'haml-rails'
 
+gem 'execjs'
+
 gem 'font-awesome-sass'
 
 gem 'devise'

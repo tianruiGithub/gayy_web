@@ -13,6 +13,16 @@
   z-index: 99;
 }
 
+.home-top2 {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:200px;
+  background: image-url('top_bg.png') no-repeat center top;
+  z-index: 99;
+}
+
 .home-menu {
   position: relative;
   left: 50%;
@@ -44,6 +54,13 @@
   position: fixed;
   left: 50%;
   top: 10px;
+  margin-left: -63px;
+}
+
+.home-icon2 {
+  position: relative;
+  left: 50%;
+  top: -30px;
   margin-left: -63px;
 }
 
@@ -115,10 +132,44 @@
   background-color: #940303;
 }
 
-.home-bottom p {
+.home-bottom2 {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #640000;
+}
+
+.home-bottom p, .home-bottom2 p {
   width: 100%;
   text-align: center;
   font-size: 14px;
   margin-top: 20px;
   color: white;
+}
+
+.address, .brand, .clients, .contact, .introduce, .news, .company, .products, .tour, .valley, .medicine {
+  background: image-url('bg.jpg') no-repeat center top;
+  background-color: #640000;
+}
+
+.sessions {
+  background-color: #940303;
+}
+
+.home-content {
+  position: relative;
+  top: 10px;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+  min-height: 500px;
+  color: #f0f0f0;
+  font-size: 15px;
+}
+
+.home-content img{
+  max-width: 1000px;
+  margin-bottom: 10px;
 }

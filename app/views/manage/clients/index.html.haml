@@ -1,0 +1,30 @@
+- provide(:title, t("scaffold.index.action") + t("model_name.client"))
+
+.wrapper
+  = render "layouts/manage_top"
+  = render "layouts/manage_menu"
+
+  .content-wrapper.wrapper-bg
+    %section.content.min-h650
+      .box.section-content
+        .box-header.box-header-bar
+          %h3.box-title= t("model_name.client") + t("scaffold.index.title")
+          .box-button
+            = link_to t("model_name.client") + t("scaffold.new.action") , new_manage_client_path, :class => "btn btn-primary btn-sm"
+        .box-body
+          %table.table.table-bordered.table-striped.table-nowrap
+            %thead
+              %tr
+                %th= t("scaffold.index.thead_id")
+                %th 标题
+                %th 时间
+                %th= t("scaffold.index.thead_operation")
+            %tbody
+              - @clients.each_with_index do |client, i|
+                %tr
+                  %td= i+1
+                  %td= client.title
+                  %td= client.updated_at.strftime("%Y-%m-%d")
+                  %td
+                    = link_to t("scaffold.edit.action"), edit_manage_client_path(client), :class => "btn btn-warning btn-xs"
+                    = link_to t("scaffold.destroy.action"), manage_client_path(client), :method => :delete, :data => {:confirm => t("scaffold.destroy.confirm")}, :class => "btn btn-danger btn-xs"

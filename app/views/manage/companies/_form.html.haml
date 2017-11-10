@@ -1,0 +1,17 @@
+= simple_form_for [:manage, @company], html: { class: 'form-horizontal' }, wrapper: (static ? :horizontal_form_static : :horizontal_form), wrapper_mappings: {check_boxes: (static ? :horizontal_radio_and_checkboxes_static : :horizontal_radio_and_checkboxes), radio_buttons: (static ? :horizontal_radio_and_checkboxes_static : :horizontal_radio_and_checkboxes), file: (static ? :horizontal_file_input_static : :horizontal_file_input), boolean: (static ? :horizontal_boolean_static : :horizontal_boolean), date: (static ? :multi_select_static : :multi_select)} do |f|
+  = f.error_notification
+
+  .form-block
+    .form-header
+      %strong
+        .fa-box
+          %i.fa.fa-user
+        国安药业
+    .row.form-row
+      .col-md-12
+        = f.kindeditor :content, :input_html => {:simple_mode => true}
+
+    - unless static
+      .row.form-row
+        .col-md-12
+          = f.button :submit, t("scaffold.form.save"), :data => {:disable_width => t("scaffold.form.saving")}, :class => "btn-primary"

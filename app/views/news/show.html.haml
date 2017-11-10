@@ -1,3 +1,8 @@
 - provide(:title, t('.title'))
 
 = render "layouts/home_top"
+
+.home-content
+  = @news.content.html_safe
+
+= render "layouts/home_footer"

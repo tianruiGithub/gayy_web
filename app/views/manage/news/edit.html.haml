@@ -1,0 +1,12 @@
+- provide(:title, t("scaffold.edit.action") + t("model_name.news"))
+
+.wrapper
+  = render "layouts/manage_top"
+  = render "layouts/manage_menu"
+
+  .content-wrapper.wrapper-bg
+    %section.content.min-h650
+      = render "layouts/flash_messages"
+      .box.section-content
+        .box-form
+          = render "form", :static => false

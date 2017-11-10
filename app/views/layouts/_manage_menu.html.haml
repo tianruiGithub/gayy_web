@@ -1,0 +1,53 @@
+%aside.main-sidebar
+  %section.sidebar
+    %ul.sidebar-menu{"data-widget" => "tree"}
+      %li.header 主菜单
+      %li{:class => ["introduces", "brands", "news", "products", "clients", "contacts"].include?(controller_name) ? "active treeview menu-open" : "treeview"}
+        %a{:href => "#"}
+          %i.fa.fa-dashboard
+          %span 导航菜单
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li{:class => controller_name == "introduces" ? "active" : ""}
+            = link_to manage_introduces_path do
+              %i.fa.fa-circle-o &nbsp;走进国安
+          %li{:class => controller_name == "brands" ? "active" : ""}
+            = link_to manage_brands_path do
+              %i.fa.fa-circle-o &nbsp;品牌文化
+          %li{:class => controller_name == "news" ? "active" : ""}
+            = link_to manage_news_index_path do
+              %i.fa.fa-circle-o &nbsp;新闻中心
+          %li
+            %a{:href => "#"}
+              %i.fa.fa-circle-o &nbsp;产品及服务
+          %li{:class => controller_name == "clients" ? "active" : ""}
+            = link_to manage_clients_path do
+              %i.fa.fa-circle-o &nbsp;客户往来
+          %li{:class => controller_name == "contacts" ? "active" : ""}
+            = link_to manage_contacts_path do
+              %i.fa.fa-circle-o &nbsp;联系我们
+      %li{:class => ["companies", "valleys", "medicines", "addresses", "tours"].include?(controller_name) ? "active treeview menu-open" : "treeview"}
+        %a{:href => "#"}
+          %i.fa.fa-dashboard
+          %span 底部通道
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li{:class => controller_name == "companies" ? "active" : ""}
+            = link_to manage_companies_path do
+              %i.fa.fa-circle-o &nbsp;国安药业
+          %li{:class => controller_name == "valleys" ? "active" : ""}
+            = link_to manage_valleys_path do
+              %i.fa.fa-circle-o &nbsp;药王谷
+          %li{:class => controller_name == "medicines" ? "active" : ""}
+            = link_to manage_medicines_path do
+              %i.fa.fa-circle-o &nbsp;安国药行
+          %li{:class => controller_name == "addresses" ? "active" : ""}
+            = link_to manage_addresses_path do
+              %i.fa.fa-circle-o &nbsp;中药材基地
+          %li{:class => controller_name == "tours" ? "active" : ""}
+            = link_to manage_tours_path do
+              %i.fa.fa-circle-o &nbsp;中医养生游
+
+

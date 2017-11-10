@@ -1,0 +1,30 @@
+zh_CN:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: '必填'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      html: '<abbr title="必填">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+    
+    collections:
+
+    common:
+      time: "时间"
+
+    labels:
+      admin:
+        email: "账户"
+        password: "密码"
+      news:
+        title: "标题"
+        content: "内容"
+  activerecord:
+    errors:
+      messages:
+        blank: "此项内容不能为空"
+      models:

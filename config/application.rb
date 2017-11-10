@@ -26,7 +26,6 @@ module GayyWeb
     # config.i18n.default_locale = :de
     config.i18n.locale = "zh-CN"
     config.i18n.default_locale = "zh-CN"
-    I18n.enforce_available_locales = false
-
+    I18n.enforce_available_locales = true
   end
 end

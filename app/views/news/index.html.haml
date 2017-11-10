@@ -1,3 +1,13 @@
 - provide(:title, t('.title'))
 
 = render "layouts/home_top"
+.home-content
+  %table{:style => "width: 90%; margin-left: 5%;"}
+    %tbody
+      - @news.each_with_index do |news, i|
+        %tr{:height => "24"}
+          %td
+            = link_to news.title, news_path(news)
+          %td{:width => "100"}= news.updated_at.strftime("%Y-%m-%d")
+
+= render "layouts/home_footer"

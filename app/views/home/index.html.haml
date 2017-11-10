@@ -1,9 +1,19 @@
 - provide(:title, t('.title'))
 
-= render "layouts/home_top"
+.home-top
+  .home-menu
+    = link_to "首页", home_index_path, :class => controller_name == "home" || controller_name == "organization" || controller_name == "valley" || controller_name == "medicine" || controller_name == "tour" || controller_name == "address" ? "home-menu-active" : ""
+    = link_to "走进国安", introduce_index_path, :class => controller_name == "introduce" ? "home-menu-active" : "" 
+    = link_to "品牌文化", brand_index_path, :class => controller_name == "brand" ? "home-menu-active" : ""
+    = link_to "新闻中心", news_index_path, :class => controller_name == "news" ? "home-menu-active" : ""
+    = link_to "产品及服务", products_path, :class => controller_name == "products" ? "home-menu-active" : ""
+    = link_to "客户往来", clients_path, :class => controller_name == "clients" ? "home-menu-active" : ""   
+    = link_to "联系我们", contact_index_path, :class => controller_name == "contact" ? "home-menu-active" : ""
+  %img{:src => "assets/icon.png", :class => "home-icon"}
 
 = render "layouts/home_carousel"
 
 = render "layouts/home_entry"
 
-= render "layouts/home_footer"
+.home-bottom
+  %p 吉林国安药业有限公司 @2017 吉林市碾子科技有限公司版权所有
