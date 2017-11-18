@@ -9,4 +9,5 @@
 #
 
 class Brand < ApplicationRecord
+  validates :content,     :presence => true
 end

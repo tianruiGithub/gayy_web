@@ -25,9 +25,10 @@ class Manage::ClientsController < Manage::ApplicationController
   end
 
   def update
+    @client = Client.find(params[:id])
     if @client.update(client_params)
       flash[:success] = "信息更新成功"
-      redirect_to manage_clients_path
+      render :edit
     else
       flash[:error] = "信息更新失败"
       render :edit

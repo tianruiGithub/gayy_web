@@ -1,0 +1,30 @@
+- provide(:title, t("scaffold.index.action") + t("model_name.product"))
+
+.wrapper
+  = render "layouts/manage_top"
+  = render "layouts/manage_menu"
+
+  .content-wrapper.wrapper-bg
+    %section.content.min-h650
+      .box.section-content
+        .box-header.box-header-bar
+          %h3.box-title= t("model_name.product") + t("scaffold.index.title")
+          .box-button
+            = link_to t("model_name.product") + t("scaffold.new.action") , new_manage_product_path, :class => "btn btn-primary btn-sm"
+        .box-body
+          %table.table.table-bordered.table-striped.table-nowrap
+            %thead
+              %tr
+                %th= t("scaffold.index.thead_id")
+                %th 名称
+                %th 时间
+                %th= t("scaffold.index.thead_operation")
+            %tbody
+              - @products.each_with_index do |product, i|
+                %tr
+                  %td= i+1
+                  %td= product.title
+                  %td= product.updated_at.strftime("%Y-%m-%d")
+                  %td
+                    = link_to t("scaffold.edit.action"), edit_manage_product_path(product), :class => "btn btn-warning btn-xs"
+                    = link_to t("scaffold.destroy.action"), manage_product_path(product), :method => :delete, :data => {:confirm => t("scaffold.destroy.confirm")}, :class => "btn btn-danger btn-xs"

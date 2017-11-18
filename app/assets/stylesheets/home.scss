@@ -142,6 +142,7 @@
 }
 
 .home-bottom p, .home-bottom2 p {
+  float: left;
   width: 100%;
   text-align: center;
   font-size: 14px;
@@ -165,11 +166,43 @@
   margin-left: -500px;
   width: 1000px;
   min-height: 500px;
-  color: #f0f0f0;
+  color: #fdcda5;
   font-size: 15px;
 }
 
 .home-content img{
   max-width: 1000px;
   margin-bottom: 10px;
+}
+
+.home-content-box {
+  float: left;
+  width: 155px;
+  height: 170px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 4px solid #e0e0e0;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.home-content-box:hover {
+  border: 4px solid #640000;
+}
+
+.home-content-box-img {
+  float: left;
+  width: 147px;
+  height: 126px;
+  border: 0px;
+}
+
+.home-content-box-title {
+  float: left;
+  width: 147px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background-color: #e0e0e0;
+  color: #f90;
 }

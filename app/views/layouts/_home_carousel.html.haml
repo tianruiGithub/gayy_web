@@ -4,12 +4,7 @@
     %li{"data-target" => "#carousel-image", "data-slide-to" => "1"}
     %li{"data-target" => "#carousel-image", "data-slide-to" => "2"}
   .carousel-inner{:role => "listbox"}
-    .item.active
-      = image_tag "index_gd_1.jpg", :class => "carousel-img home-carousel-img"
-      .carousel-caption
-    .item
-      = image_tag "index_gd_2.jpg", :class => "carousel-img home-carousel-img"
-      .carousel-caption
-    .item
-      = image_tag "index_gd_3.jpg", :class => "carousel-img home-carousel-img"
-      .carousel-caption
+    - @carsousels.each_with_index do |carsousel, i|
+      .item{:class => i == 0 ? "active" : ""}
+        = image_tag carsousel.file, :class => "carousel-img home-carousel-img"
+        .carousel-caption

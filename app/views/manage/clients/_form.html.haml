@@ -7,14 +7,11 @@
         .fa-box
           %i.fa.fa-user
       客户往来
+      - unless static
+        = f.button :submit, t("scaffold.form.save"), :data => {:disable_width => t("scaffold.form.saving")}, :class => "btn-primary", :style => "float: right; color: white;"
     .row.form-row
       .col-md-12
-        = f.input :title
+        = f.input :title, :label => "标题:"
     .row.form-row
       .col-md-12
-        = f.kindeditor :content, :input_html => {:simple_mode => true}
-
-    - unless static
-      .row.form-row
-        .col-md-12
-          = f.button :submit, t("scaffold.form.save"), :data => {:disable_width => t("scaffold.form.saving")}, :class => "btn-primary"
+        = f.input :content, :as => :kindeditor, :label => "内容:", :input_html => {:simple_mode => true}

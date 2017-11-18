@@ -1,3 +1,11 @@
 - provide(:title, t('.title'))
 
 = render "layouts/home_top"
+.home-content
+  - @products.each_with_index do |product, i|
+    = link_to product_path(product), :target => "_blank" do
+      .home-content-box
+        = image_tag product.img, :class => "home-content-box-img"
+        .home-content-box-title
+          = product.title
+= render "layouts/home_footer"

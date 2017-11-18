@@ -13,7 +13,7 @@ class Manage::NewsController < Manage::ApplicationController
     @news = News.new(news_params)
     if @news.save
       flash[:success] = "新闻创建成功"
-      redirect_to manage_introduces_path
+      redirect_to manage_news_index_path
     else
       flash[:error] = "新闻创建失败"
       render :new
@@ -25,9 +25,10 @@ class Manage::NewsController < Manage::ApplicationController
   end
 
   def update
+    @news = News.find(params[:id])
     if @news.update(news_params)
       flash[:success] = "新闻更新成功"
-      redirect_to manage_introduces_path
+      render :edit
     else
       flash[:error] = "新闻更新失败"
       render :edit

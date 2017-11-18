@@ -23,6 +23,10 @@ zh_CN:
       news:
         title: "标题"
         content: "内容"
+      prooduct:
+        title: "标题"
+        img: "图片"
+        content: "内容"
   activerecord:
     errors:
       messages:

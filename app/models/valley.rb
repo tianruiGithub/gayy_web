@@ -9,4 +9,5 @@
 #
 
 class Valley < ApplicationRecord
+  validates :content,     :presence => true
 end

@@ -10,4 +10,8 @@
 #
 
 class Carsousel < ApplicationRecord
+  validates :no,       :presence => true
+  validates :file,     :presence => true
+  
+  mount_uploader :file, ImageUploader
 end

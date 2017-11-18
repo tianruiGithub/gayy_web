@@ -29,3 +29,14 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+    labels:
+      admin:
+        email: "账户"
+        password: "密码"
+      news:
+        title: "标题"
+        content: "内容"
+      prooduct:
+        title: "标题"
+        img: "图片"
+        content: "内容"

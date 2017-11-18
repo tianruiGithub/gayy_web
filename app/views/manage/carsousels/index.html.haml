@@ -1,0 +1,32 @@
+- provide(:title, t("scaffold.index.action") + t("model_name.carsousel"))
+
+.wrapper
+  = render "layouts/manage_top"
+  = render "layouts/manage_menu"
+
+  .content-wrapper.wrapper-bg
+    %section.content.min-h650
+      .box.section-content
+        .box-header.box-header-bar
+          %h3.box-title= t("model_name.carsousel") + t("scaffold.index.title")
+          .box-button
+            = link_to t("model_name.carsousel") + t("scaffold.new.action") , new_manage_carsousel_path, :class => "btn btn-primary btn-sm"
+        .box-body
+          %table.table.table-bordered.table-striped.table-nowrap
+            %thead
+              %tr
+                %th= t("scaffold.index.thead_id")
+                %th 顺序
+                %th 图片
+                %th 时间
+                %th= t("scaffold.index.thead_operation")
+            %tbody
+              - @carsousels.each_with_index do |carsousel, i|
+                %tr
+                  %td= i+1
+                  %td= carsousel.no
+                  %td= carsousel.file
+                  %td= carsousel.updated_at.strftime("%Y-%m-%d")
+                  %td
+                    = link_to t("scaffold.edit.action"), edit_manage_carsousel_path(carsousel), :class => "btn btn-warning btn-xs"
+                    = link_to t("scaffold.destroy.action"), manage_carsousel_path(carsousel), :method => :delete, :data => {:confirm => t("scaffold.destroy.confirm")}, :class => "btn btn-danger btn-xs"

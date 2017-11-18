@@ -43,13 +43,13 @@ ActiveRecord::Schema.define(version: 20171021104642) do
 
   create_table "carsousels", force: :cascade do |t|
     t.integer "no"
-    t.string "file"
+    t.string "file", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "clients", force: :cascade do |t|
-    t.string "title"
+    t.string "title", default: "", null: false
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -91,14 +91,15 @@ ActiveRecord::Schema.define(version: 20171021104642) do
   end
 
   create_table "news", force: :cascade do |t|
-    t.string "title"
+    t.string "title", default: "", null: false
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "title"
+    t.string "title", default: "", null: false
+    t.string "img"
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

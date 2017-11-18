@@ -9,4 +9,5 @@
 #
 
 class Address < ApplicationRecord
+  validates :content,     :presence => true
 end

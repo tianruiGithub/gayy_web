@@ -9,4 +9,5 @@
 #
 
 class Medicine < ApplicationRecord
+  validates :content,     :presence => true
 end

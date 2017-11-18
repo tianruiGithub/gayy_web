@@ -19,6 +19,8 @@ zh-CN:
   products:
     index:
       title: "产品及服务"
+    show:
+      title: "产品及服务"
   clients:
     index:
       title: "客户往来"
@@ -57,6 +59,18 @@ zh-CN:
     valley: "药王谷"
     medicine: "安国药行"
     tour: "中医养生游"
+    carsousel: "轮播图"
+  labels:
+    admin:
+      email: "账户"
+      password: "密码"
+    news:
+      title: "标题"
+      content: "内容"
+    prooduct:
+      title: "标题"
+      img: "图片"
+      content: "内容"
 
   scaffold:
     saving: "保存中.."

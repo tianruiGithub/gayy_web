@@ -63,6 +63,9 @@ gem 'execjs'
 
 gem 'font-awesome-sass'
 
+gem 'carrierwave'
+gem 'mini_magick'
+
 gem 'devise'
 
 gem 'simple_form'
@@ -77,3 +80,5 @@ end
 gem 'rails_kindeditor'
 
 gem 'annotate'
+
+gem 'kaminari'

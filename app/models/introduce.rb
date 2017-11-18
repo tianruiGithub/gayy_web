@@ -9,4 +9,5 @@
 #
 
 class Introduce < ApplicationRecord
+  validates :content,     :presence => true
 end

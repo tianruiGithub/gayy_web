@@ -10,4 +10,9 @@
 #
 
 class Product < ApplicationRecord
+  validates :title,       :presence => true
+  validates :img,         :presence => true
+  validates :content,     :presence => true
+
+  mount_uploader :img, ImageUploader
 end

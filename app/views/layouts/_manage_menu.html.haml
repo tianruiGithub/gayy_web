@@ -18,8 +18,8 @@
           %li{:class => controller_name == "news" ? "active" : ""}
             = link_to manage_news_index_path do
               %i.fa.fa-circle-o &nbsp;新闻中心
-          %li
-            %a{:href => "#"}
+          %li{:class => controller_name == "products" ? "active" : ""}
+            = link_to manage_products_path do
               %i.fa.fa-circle-o &nbsp;产品及服务
           %li{:class => controller_name == "clients" ? "active" : ""}
             = link_to manage_clients_path do
@@ -49,5 +49,10 @@
           %li{:class => controller_name == "tours" ? "active" : ""}
             = link_to manage_tours_path do
               %i.fa.fa-circle-o &nbsp;中医养生游
+      %li{:class => ["carsousels"].include?(controller_name) ? "active treeview menu-open" : "treeview"}
+        = link_to manage_carsousels_path do
+          %i.fa.fa-dashboard
+          %span 轮播图
+          %span.pull-right-container
 
 

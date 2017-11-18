@@ -25,6 +25,8 @@ Rails.application.routes.draw do
     resources :tours, only: [:index, :new, :create, :edit, :update] 
     resources :news
     resources :clients
+    resources :products
+    resources :carsousels
   end
 
   namespace :kindeditor do

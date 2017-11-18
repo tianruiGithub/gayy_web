@@ -7,7 +7,7 @@
       - @clients.each_with_index do |client, i|
         %tr{:height => "24"}
           %td
-            = link_to client.title, client_path(client)
+            = link_to client.title, client_path(client), :target => "_blank"
           %td{:width => "100"}= client.updated_at.strftime("%Y-%m-%d")
 
 = render "layouts/home_footer"

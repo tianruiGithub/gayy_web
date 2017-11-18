@@ -7,7 +7,7 @@
       - @news.each_with_index do |news, i|
         %tr{:height => "24"}
           %td
-            = link_to news.title, news_path(news)
+            = link_to news.title, news_path(news), :target => "_blank"
           %td{:width => "100"}= news.updated_at.strftime("%Y-%m-%d")
 
 = render "layouts/home_footer"
